@@ -70,7 +70,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            line-height: 16px;
+            line-height: 14px;
             display: flex;
             align-items: center;
             text-align: center;
