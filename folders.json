@@ -1,0 +1,82 @@
+{
+  "folders": [
+    {
+      "id": 1,
+      "name": "AAA",
+      "type": "folder",
+      "selected": false,
+      "children": [{
+        "id": 10,
+        "name": "PDF A",
+        "selected": false,
+        "type": "file",
+        "src": "https://dev.totalflow.io/downloads/2020/12/18/4fe5d20a33868c826e8886119828d69a.pdf"
+      }]
+    },
+    {
+      "id": 2,
+      "name": "BBB",
+      "type": "folder",
+      "selected": false,
+      "children": [{
+        "id": 12,
+        "name": "PDF B",
+        "selected": false,
+        "type": "file",
+        "src": "https://dev.totalflow.io/downloads/2020/12/18/4fe5d20a33868c826e8886119828d69a.pdf"
+      }]
+    },
+    {
+      "id": 3,
+      "name": "CCC",
+      "type": "folder",
+      "selected": false,
+      "children": [{
+        "id": 13,
+        "name": "PDF C",
+        "selected": false,
+        "type": "file",
+        "src": "https://dev.totalflow.io/downloads/2020/12/18/4fe5d20a33868c826e8886119828d69a.pdf"
+      }]
+    },
+    {
+      "id": 4,
+      "name": "DDD",
+      "type": "folder",
+      "selected": false,
+      "children": [{
+        "id": 14,
+        "name": "PDF D",
+        "selected": false,
+        "type": "file",
+        "src": "https://dev.totalflow.io/downloads/2020/12/18/4fe5d20a33868c826e8886119828d69a.pdf"
+      }]
+    },
+    {
+      "id": 5,
+      "name": "EEE",
+      "type": "folder",
+      "selected": false,
+      "children": [{
+        "id": 15,
+        "name": "PDF E",
+        "selected": false,
+        "type": "file",
+        "src": "https://dev.totalflow.io/downloads/2020/12/18/4fe5d20a33868c826e8886119828d69a.pdf"
+      }]
+    },
+    {
+      "id": 6,
+      "name": "FFF",
+      "type": "folder",
+      "selected": false,
+      "children": [{
+        "id": 16,
+        "name": "PDF F",
+        "selected": false,
+        "type": "file",
+        "src": "https://dev.totalflow.io/downloads/2020/12/18/4fe5d20a33868c826e8886119828d69a.pdf"
+      }]
+    }
+  ]
+}
