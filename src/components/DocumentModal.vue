@@ -62,6 +62,16 @@
         right: 45px;
         max-width: 618px;
         width:100%;
+        animation: expand 0.5s;
+    }
+
+    @-webkit-keyframes expand{
+        0% {
+            width:0;
+        }
+        100% {
+            width:100%;
+        }
     }
 
     .modal-container {

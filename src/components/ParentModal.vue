@@ -82,13 +82,24 @@
         left: 45px;
         max-width: 618px;
         width:100%;
+        animation: expand 0.5s;
     }
+    @-webkit-keyframes expand{
+        0% {
+            width:0;
+        }
+        100% {
+            width:100%;
+        }
+    }
+
     .modal-container {
         background-color: #fff;
         border-radius: 3px 3px 0 0;
         overflow:hidden;
         transition: all 0.3s ease;
     }
+
     .modal-body {
         height: 753px;
         display:flex;

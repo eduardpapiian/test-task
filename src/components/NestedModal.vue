@@ -7,13 +7,15 @@
                             :data="getNestedModal.selectedFolder"
                             modalType="nestedModal"/>
                     <div class="modal-body">
-                        <file v-for="file in getNestedModal.selectedFolder.children.filter(val => val.type === 'file')"
-                              :file="file"
-                              :key="file.id"/>
-                        <folder v-for="folder in getNestedModal.selectedFolder.children.filter(val => val.type === 'folder')"
-                               :folder="folder"
-                               :key="folder.id"
-                               folderType="childNestedFolder"/>
+                        <div class="modal-body__container">
+                            <file v-for="file in getNestedModal.selectedFolder.children.filter(val => val.type === 'file')"
+                                  :file="file"
+                                  :key="file.id"/>
+                            <folder v-for="folder in getNestedModal.selectedFolder.children.filter(val => val.type === 'folder')"
+                                    :folder="folder"
+                                    :key="folder.id"
+                                    folderType="childNestedFolder"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,7 +61,7 @@
     }
     .nested-modal-mask {
         position: absolute;
-        z-index: 9997;
+        z-index: 9998;
         top: 34px;
         left: 34px;
         max-width: 618px;
@@ -67,6 +69,15 @@
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
         box-sizing: border-box;
         border-radius: 3px;
+        animation: expand 0.5s;
+    }
+    @-webkit-keyframes expand{
+        0% {
+            width:0;
+        }
+        100% {
+            width:100%;
+        }
     }
     .modal-container {
         background-color: #fff;
@@ -77,10 +88,11 @@
     .modal-body {
         display:flex;
         height: 753px;
+        justify-content: center;
         &__container{
             display: grid;
             grid-template-columns: 178px 178px 178px;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 214px 214px;
             grid-column-gap: 8px;
             grid-row-gap: 8px;
         }
