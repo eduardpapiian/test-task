@@ -63,6 +63,7 @@
         max-width: 618px;
         width:100%;
         animation: expand 0.5s;
+        overflow:hidden;
     }
 
     @-webkit-keyframes expand{

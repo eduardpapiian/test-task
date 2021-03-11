@@ -53,6 +53,17 @@
 </script>
 
 <style scoped lang="less">
+    .modal-enter {
+        opacity: 0;
+        transition : opacity 0.5s;
+    }
+    .modal-enter-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .modal-leave-active {
+        transition: opacity 0.5s;
+        opacity: 0;
+    }
     .modal-mask {
         position: fixed;
         z-index: 9998;
@@ -63,6 +74,18 @@
         background-color: #E2E6E6;
         transition: opacity 0.3s ease;
         overflow:hidden;
+        animation: expand 0.5s;
+    }
+
+    @-webkit-keyframes expand{
+        0% {
+            width:0;
+            height:0;
+        }
+        100% {
+            width:100%;
+            height:100;
+        }
     }
 
     .modal-wrapper {

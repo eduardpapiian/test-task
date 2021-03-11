@@ -7,6 +7,7 @@
                 v-if="getParentModal.open"/>
 
         </div>
+        {{getDefaultFolders}}
         <div class="wrapper__right-side">
             <draggable :list="getDefaultFolders"
                        group="folders"
